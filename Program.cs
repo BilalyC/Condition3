@@ -13,43 +13,42 @@ namespace Exo3
             Console.WriteLine("Veillez taper votre âge :");
             int age = int.Parse(Console.ReadLine());
             Console.WriteLine("Veillez indiquer votre sexe (homme ou femme) :");
-            string sexe = Console.ReadLine();
+            string gender = Console.ReadLine();
 
             if (age >= 18 && age < 120)
             {
-                if (sexe == "homme")
+                switch (gender)
                 {
-                    Console.WriteLine("Vous avez " + age + " ans, vous êtes donc majeur.");
-                }
-                else
-                {
-                    if (sexe == "femme")
+                    case "homme":
+                        Console.WriteLine("Vous avez " + age + " ans, vous êtes donc majeur.");
+                        break;
+                    case "femme":
                         Console.WriteLine("Vous avez " + age + " ans, vous êtes donc majeure.");
-                    else
+                        break;
+                    default:
                         Console.WriteLine("Il y a une erreur dans la saisie du sexe.");
+                        break;
+                }
+            }
+            else if (age > 0 && age < 18)
+            {
+                switch (gender)
+                {
+                    case "homme":
+                        Console.WriteLine("Vous avez " + age + " ans, vous êtes donc mineur.");
+                        break;
+                    case "femme":
+                        Console.WriteLine("Vous avez " + age + " ans, vous êtes donc mineure.");
+                        break;
+                    default:
+                        Console.WriteLine("Il y a une erreur dans la saisie du sexe.");
+                        break;
                 }
             }
             else
             {
-                if (age > 0 && age < 18)
-                {
-                    if (sexe == "homme")
-                    {
-                        Console.WriteLine("Vous avez " + age + " ans, vous êtes donc mineur.");
-                    }
-                    else
-                    {
-                        if (sexe == "femme")
-                            Console.WriteLine("Vous avez " + age + " ans, vous êtes donc mineure.");
-                        else
-                            Console.WriteLine("Il y a une erreur dans la saisie du sexe.");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Il y a une erreur dans l'age.");
-                }
-            }   
+                Console.WriteLine("Il y a une erreur dans l'age.");
+            }
         }
     }
 }
