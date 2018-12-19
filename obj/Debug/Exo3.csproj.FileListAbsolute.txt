@@ -4,3 +4,4 @@ C:\Users\Moi\source\conditions\Exo3\Exo3\bin\Debug\Exo3.pdb
 C:\Users\Moi\source\conditions\Exo3\Exo3\obj\Debug\Exo3.csproj.CoreCompileInputs.cache
 C:\Users\Moi\source\conditions\Exo3\Exo3\obj\Debug\Exo3.exe
 C:\Users\Moi\source\conditions\Exo3\Exo3\obj\Debug\Exo3.pdb
+C:\Users\Moi\source\conditions\Exo3\Exo3\obj\Debug\Exo3.csprojAssemblyReference.cache
